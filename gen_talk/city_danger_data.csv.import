@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cnehu8jmll0w3"
+
+[deps]
+
+files=["res://city_danger_data.enemies.translation", "res://city_danger_data.structures.translation", "res://city_danger_data.danger.translation"]
+
+source_file="res://city_danger_data.csv"
+dest_files=["res://city_danger_data.enemies.translation", "res://city_danger_data.structures.translation", "res://city_danger_data.danger.translation"]
+
+[params]
+
+compress=true
+delimiter=0

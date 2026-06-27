@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b6kkmcvlm13uk"
+
+[deps]
+
+files=["res://trainingdata.items.translation", "res://trainingdata.weapon.translation", "res://trainingdata.behavior.translation"]
+
+source_file="res://trainingdata.csv"
+dest_files=["res://trainingdata.items.translation", "res://trainingdata.weapon.translation", "res://trainingdata.behavior.translation"]
+
+[params]
+
+compress=true
+delimiter=0

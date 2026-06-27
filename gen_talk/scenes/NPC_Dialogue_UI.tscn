@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://bse4gcdnwxtrc"]
+
+[ext_resource type="Script" path="res://scripts/npc_dialogue_ui.gd" id="1_0q0t1"]
+
+[node name="NPC_Dialogue_UI" type="CanvasLayer" groups=["DialogueUI"]]
+script = ExtResource("1_0q0t1")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="BackGround" type="ColorRect" parent="."]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -800.0
+offset_right = -400.0
+grow_horizontal = 0
+grow_vertical = 2
+color = Color(0.0235294, 0.0705882, 0.0666667, 0.156863)
+
+[node name="ChatDisplay" type="RichTextLabel" parent="BackGround"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="InputField" type="LineEdit" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 0
+placeholder_text = "..."

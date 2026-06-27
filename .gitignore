@@ -1,0 +1,7 @@
+.godot/
+.import/
+*.exe
+*.pck
+*.zip
+.env
+*.pkl
