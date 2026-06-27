@@ -22,6 +22,7 @@ jobs:
           export-templates: true
 
       - name: Export Web
+        working-directory: gen_talk
         run: |
           mkdir -p build/web
           godot --headless --export-release "Web" build/web/index.html
@@ -30,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: web-build
-          path: build/web/
+          path: gen_talk/build/web/
